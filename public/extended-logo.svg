@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="246.215"
+   height="52.255001"
+   viewBox="0 0 65.144382 13.825802"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="extended-logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:lockguides="true"
+     inkscape:zoom="2"
+     inkscape:cx="113.5"
+     inkscape:cy="78"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showguides="false">
+    <sodipodi:guide
+       position="22.293054,13.411829"
+       orientation="0,-1"
+       id="guide4928"
+       inkscape:locked="true" />
+    <sodipodi:guide
+       position="55.396409,18.106328"
+       orientation="1,0"
+       id="guide11022"
+       inkscape:locked="true" />
+    <sodipodi:guide
+       position="29.332779,10.112586"
+       orientation="0,-1"
+       id="guide14038"
+       inkscape:locked="true" />
+    <sodipodi:guide
+       position="47.91767,16.046316"
+       orientation="0,-1"
+       id="guide14042"
+       inkscape:locked="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient977">
+      <stop
+         style="stop-color:#05bd58;stop-opacity:1;"
+         offset="0"
+         id="stop973" />
+      <stop
+         style="stop-color:#05bd58;stop-opacity:0;"
+         offset="1"
+         id="stop975" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient977"
+       id="linearGradient979"
+       x1="0.71652597"
+       y1="3.9393528"
+       x2="60.017033"
+       y2="3.9393528"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="matrix(0.99999764,0,0,0.99999764,-4.0596908,-6.4658182)">
+    <g
+       id="g17377"
+       inkscape:label="Logo"
+       transform="translate(0.35826294,0.08956574)">
+      <circle
+         style="opacity:1;fill:#05c45b;fill-opacity:1;stroke-width:0.231203"
+         id="path4860"
+         cx="10.621277"
+         cy="13.289317"
+         r="6.9129171" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Istok Web';-inkscape-font-specification:'Istok Web';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;opacity:1;fill:#ffffff;fill-opacity:1;stroke-width:0.264999"
+         x="5.5483317"
+         y="15.783458"
+         id="text4872"><tspan
+           sodipodi:role="line"
+           id="tspan4870"
+           style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:7.05556px;font-family:Poppins;-inkscape-font-specification:'Poppins Ultra-Bold';opacity:0.395408;fill:#ffffff;fill-opacity:1;stroke-width:0.265"
+           x="5.5483317"
+           y="15.783458">RC</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.90614px;font-family:'Istok Web';-inkscape-font-specification:'Istok Web';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;opacity:1;fill:#ffffff;fill-opacity:1;stroke-width:0.146711"
+       x="19.426716"
+       y="14.314122"
+       id="text10962"
+       inkscape:label="text10962"
+       transform="scale(1.0493421,0.95297807)"><tspan
+         sodipodi:role="line"
+         id="tspan10960"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.68738px;font-family:'Istok Web';-inkscape-font-specification:'Istok Web, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.146711"
+         x="19.426716"
+         y="14.314122">DIGITAL</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.74242px;font-family:'Istok Web';-inkscape-font-specification:'Istok Web';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;opacity:1;fill:#ffffff;fill-opacity:1;stroke-width:0.140561"
+       x="43.608753"
+       y="16.256237"
+       id="text10966"
+       inkscape:label="text10962"><tspan
+         sodipodi:role="line"
+         id="tspan10964"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.49091px;font-family:'Istok Web';-inkscape-font-specification:'Istok Web';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.140562"
+         x="43.608753"
+         y="16.256237">MARKETING</tspan></text>
+    <g
+       id="g14819"
+       inkscape:label="Line">
+      <rect
+         style="opacity:1;fill:#414141;fill-opacity:1;stroke-width:0;stroke-dasharray:none;paint-order:fill markers stroke"
+         id="rect11020"
+         width="20.736393"
+         height="0.79906732"
+         x="20.61072"
+         y="15.54824" />
+      <rect
+         style="fill:#414141;fill-opacity:1;stroke-width:0;stroke-dasharray:none;paint-order:fill markers stroke"
+         id="rect11020-9"
+         width="5.9383397"
+         height="0.79906732"
+         x="10.408595"
+         y="-41.899311"
+         transform="rotate(90)" />
+      <rect
+         style="fill:#414141;fill-opacity:1;stroke-width:0;stroke-dasharray:none;paint-order:fill markers stroke"
+         id="rect11020-8"
+         width="28.061674"
+         height="0.79906732"
+         x="41.149414"
+         y="10.408709" />
+    </g>
+  </g>
+</svg>
