@@ -1,0 +1,69 @@
+@use './variables' as v;
+
+// Sizes
+.my-xs {
+    margin-top: v.$xs;
+}
+.my-regular {
+    margin-top: v.$regular;
+}
+.my-l {
+    margin-top: v.$m;
+}
+.my-xl {
+    margin-top: v.$l;
+}
+.section {
+    padding: v.$xxl var(--MX-REGULAR);
+}
+
+// Buttons
+button.btn-1,
+a.btn-1 {
+    display: inline-block;
+    transition: .1s;
+    font: 1rem 'Raleway', sans-serif;
+    line-height: 23px;
+    padding: 1em 1.5em;
+    border-radius: 75px;
+    letter-spacing: .4px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: 600;
+    background: linear-gradient(180deg, #06F471 0%, #049043 100%);
+    &:hover {
+
+    }
+    &.loading {
+        // cursor: not-allowed;
+        // opacity: .2;
+    }
+}
+button.btn-2, 
+a.btn-2 {
+    display: inline-block;
+    font: 1rem 'Raleway', sans-serif;
+    line-height: 23px;
+    padding: .5em 1em;
+    border-radius: 75px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: 600;
+    border: 2px solid v.$secondary;
+    background-color: transparent;
+    transition: .1s;
+    &:hover {
+        // transition: .2s;
+        // background-color: v.$primary-hover;
+        // color: white;
+        // border: 1px solid transparent;
+        // transform: scale(95%);
+    }
+}
+
+/* Button 3 */
+
+

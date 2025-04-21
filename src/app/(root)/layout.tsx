@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import '@/sass/_global.scss';
 
 export const metadata: Metadata = {
   title: "RC Digital Marketing",

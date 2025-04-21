@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function page() {
   return (
-    <div>Hello</div>
+    <div>
+      <button className="btn-1">Contatta</button>
+    </div>
   )
 }

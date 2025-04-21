@@ -1,0 +1,16 @@
+@use './variables' as v;
+
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == 'mobile' {
+        @media (max-width: 521px) { @content; }
+    }
+    @if $breakpoint == 'tablet' {
+        @media (max-width: 1080px) { @content; }
+    } 
+    @if $breakpoint == 'desktop' {
+        @media (max-width: 1130px) { @content; }
+    }
+    @else {
+        @media (max-width: $breakpoint) { @content; }
+    }
+}
