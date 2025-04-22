@@ -20,8 +20,8 @@
 // Buttons
 button.btn-1,
 a.btn-1 {
+    transition: .2s;
     display: inline-block;
-    transition: .1s;
     font: 1rem 'Raleway', sans-serif;
     line-height: 23px;
     padding: 1em 1.5em;
@@ -31,10 +31,10 @@ a.btn-1 {
     border: none;
     cursor: pointer;
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 500;
     background: linear-gradient(180deg, #06F471 0%, #049043 100%);
     &:hover {
-
+        box-shadow: 0px 0px 10px 2px v.$primary;
     }
     &.loading {
         // cursor: not-allowed;
@@ -46,21 +46,17 @@ a.btn-2 {
     display: inline-block;
     font: 1rem 'Raleway', sans-serif;
     line-height: 23px;
-    padding: .5em 1em;
+    padding: 1em 1.5em;
     border-radius: 75px;
     text-decoration: none;
     cursor: pointer;
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 500;
     border: 2px solid v.$secondary;
     background-color: transparent;
-    transition: .1s;
+    transition: .2s;
     &:hover {
-        // transition: .2s;
-        // background-color: v.$primary-hover;
-        // color: white;
-        // border: 1px solid transparent;
-        // transform: scale(95%);
+        background-color: v.$secondary;
     }
 }
 
