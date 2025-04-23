@@ -1,0 +1,26 @@
+@use 'src/sass/variables' as v;
+
+button.theme-switcher {
+    width: 2.2rem; 
+    aspect-ratio: 1 / 1;
+    background-color: transparent;
+    color: var(--title-color);
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    padding: 0.35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .2s;
+    &:hover {
+        color: var(--bg-1);
+        background-color: var(--secondary);
+    }
+    .icon {
+        font-size: 1.15rem;
+        line-height: 1;
+    }
+}
+  

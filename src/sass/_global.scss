@@ -1,28 +1,20 @@
 @forward './class';
+@forward './root';
 @use './variables' as v;
 
 @font-face {
-    font-family: 'Istok_Web';
-    src: url('/fonts/IstokWeb-Regular.ttf') format('ttf');
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
+    font-display: swap; // Add this line
 }
 @font-face {
-    font-family: 'Raleway';
-    src: url('/fonts/Raleway-Regular.ttf') format('ttf');
+    font-family: 'Istok_Web';
+    src: url('../fonts/IstokWeb-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
-}
-
-:root {
-    --MX-REGULAR: calc(18% - 3rem);
-    --TITLE-SIZE: v.$xl;
-}
-@media screen and (max-width: 521px) {
-    :root {
-        --MX-REGULAR: 1rem;
-        --TITLE-SIZE: calc(v.$xl * (5 / 6));
-    }
+    font-display: swap;
 }
 
 * {
@@ -36,23 +28,23 @@ html {
 body {
     font-family: 'Raleway', sans-serif;
     min-height: 100vh;
-    color: v.$p-color;
-    background-color: v.$bg-1;
+    color: var(--p-color);
+    background-color: var(--bg-1);
 }
 h1 {
-    color: v.$title-color;
+    color: var(--title-color);
     font-size: v.$xl;
     font-weight: 700;
     list-style: 1.24;
 }
 h2 {
-    color: v.$h2-color;
+    color: var(--h2-color);
     font-size: calc(v.$regular * 2.25);
     font-weight: 700;
     line-height: 1.12;
 }
 h3 {
-    color: v.$title-color;
+    color: var(--title-color);
     font-size: v.$m;
     font-weight: 700;
     line-height: 1.20;
@@ -60,11 +52,12 @@ h3 {
 p {
     line-height: 1.65;
     &.medium {
-        color: v.$p-m-color;
+        color: var(--p-m-color);
         font-weight: 500;
     }
     &.semi-bold {
-        color: v.$title-color;
+        color: var(--title-color);
         font-weight: 600;
     }
 }
+  

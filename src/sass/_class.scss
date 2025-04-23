@@ -34,7 +34,7 @@ a.btn-1 {
     font-weight: 500;
     background: linear-gradient(180deg, #06F471 0%, #049043 100%);
     &:hover {
-        box-shadow: 0px 0px 10px 2px v.$primary;
+        box-shadow: 0px 0px 10px 2px var(--primary);
     }
     &.loading {
         // cursor: not-allowed;
@@ -50,13 +50,13 @@ a.btn-2 {
     border-radius: 75px;
     text-decoration: none;
     cursor: pointer;
-    color: #ffffff;
+    color: var(--main-color);
     font-weight: 500;
-    border: 2px solid v.$secondary;
+    border: 2px solid var(--secondary);
     background-color: transparent;
     transition: .2s;
     &:hover {
-        background-color: v.$secondary;
+        background-color: var(--secondary);
     }
 }
 

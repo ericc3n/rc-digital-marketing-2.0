@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import '@/sass/_global.scss';
+import ThemeProvider from "@/context/ThemeProvider/ThemeProvider";
 
 export const metadata: Metadata = {
   title: "RC Digital Marketing",
@@ -12,9 +13,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body>
-        {children}
+        <ThemeProvider 
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

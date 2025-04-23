@@ -1,0 +1,13 @@
+.logo {
+    font: 1.5rem 'Istok_Web', sans-serif;
+}
+.bold {
+    transition: .2s;
+    color: var(--main-color);
+    font-weight: 700;
+}
+.normal {
+    transition: .2s;
+    color: var(--primary);
+    font-weight: 400;
+}

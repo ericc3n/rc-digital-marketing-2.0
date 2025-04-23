@@ -1,0 +1,48 @@
+.light {
+    --primary-l: 39%;
+    --secondary-l: 37%;
+    --bg1-l: 94%;
+    --bg2-l: 90%;
+    --main-color-l: 0%;
+    --p-color-l: 40%;
+    --p-m-color-l: 46%;
+    --h2-color-l: 21%;
+    --title-color-l: 10%;
+}
+.dark {
+    // Lightness value for dark-theme
+    --primary-l: 39%;
+    --secondary-l: 37%;
+    --bg1-l: 6%;
+    --bg2-l: 10%;
+    --main-color-l: 100%;
+    --p-color-l: 60%;
+    --p-m-color-l: 56%;
+    --h2-color-l: 79%;
+    --title-color-l: 90%;
+}
+:root {
+    // Colors
+    --primary: hsl(147, 95%, var(--primary-l));
+    --secondary: hsl(203, 100%, var(--secondary-l));
+    --bg-1: hsl(205, 40%, var(--bg1-l));
+    --bg-2: hsl(204, 49%, var(--bg2-l));
+    --bg-3: hsla(204, 49%, var(--bg2-l), 0.2);
+    --bg-4: hsla(204, 49%, var(--bg2-l), 0.8);
+    --main-color: hsl(0, 0%, var(--main-color-l));
+    --p-color: hsl(0, 0%, var(--p-color-l));
+    --p-m-color: hsl(203, 22%, var(--p-m-color-l));
+    --h2-color: hsl(202, 21%, var(--h2-color-l));
+    --title-color: hsl(0, 0%, var(--title-color-l));
+
+    // Sizes
+    --MX-REGULAR: calc(18% - 3rem);
+    --TITLE-SIZE: v.$xl;
+}
+
+@media screen and (max-width: 521px) {
+    :root {
+        --MX-REGULAR: 1rem;
+        --TITLE-SIZE: calc(v.$xl * (5 / 6));
+    }
+}

@@ -1,0 +1,22 @@
+@use 'src/sass/variables' as v;
+
+nav {
+    padding: v.$m var(--MX-REGULAR); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul.link-pages {
+        width: max(30%, 300px);
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        li a {
+            color: var(--h2-color);
+            text-decoration: none;
+            transition: .2s;
+            &:hover {
+                color: var(--secondary);
+            }
+        }
+    }
+}
