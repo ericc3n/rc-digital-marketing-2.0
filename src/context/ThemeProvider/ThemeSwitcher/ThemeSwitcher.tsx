@@ -23,7 +23,7 @@ export default function ThemeSwitcher() {
   return (
     <button 
       className='theme-switcher' 
-      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+      onClick={() => {setTheme(theme === 'dark' ? 'light' : 'dark'); console.log('clicked')}}
     >
       <span className='icon'>{theme === 'dark' ? <MdDarkMode /> : <MdLightMode />}</span>
     </button>

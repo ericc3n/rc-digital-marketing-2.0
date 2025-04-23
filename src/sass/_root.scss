@@ -40,9 +40,9 @@
     --TITLE-SIZE: v.$xl;
 }
 
-@media screen and (max-width: 521px) {
+@media screen and (max-width: 535px) {
     :root {
-        --MX-REGULAR: 1rem;
+        --MX-REGULAR: 1.25rem;
         --TITLE-SIZE: calc(v.$xl * (5 / 6));
     }
 }

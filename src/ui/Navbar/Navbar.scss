@@ -1,22 +1,68 @@
 @use 'src/sass/variables' as v;
+@use 'src/sass/mixins' as m;
 
 nav {
     padding: v.$m var(--MX-REGULAR); 
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    ul.link-pages {
-        width: max(30%, 300px);
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-        li a {
-            color: var(--h2-color);
-            text-decoration: none;
-            transition: .2s;
-            &:hover {
-                color: var(--secondary);
+    background-color: var(--bg-1);
+    z-index: 2;
+    .nav-container {
+        ul.link-pages {
+            width: max(30%, 300px);
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            li a {
+                color: var(--h2-color);
+                text-decoration: none;
+                transition: .2s;
+                &:hover {
+                    color: var(--secondary);
+                }
             }
         }
+    }
+    @include m.respond-to('tablet') {
+        .nav-container {
+            span.drop-menu-button {
+                cursor: pointer;
+                line-height: 0;
+                color: var(--h2-color);
+                font-size: 1.5rem;
+            }
+            ul.link-pages {
+                margin-top: v.$m;
+                padding-bottom: calc(2 * v.$m);
+                padding-inline: var(--MX-REGULAR);
+                flex-direction: column;
+                justify-content: start;
+                position: absolute;
+                background-color: var(--bg-1);
+                width: 100%;
+                left: 0;
+                overflow: hidden;
+
+                // Dynamic class
+                &.hide {
+                    transition: .2s ease-out;
+                    height: min-content;
+                    opacity: 0;
+                    gap: v.$m;
+                }
+                &.show {
+                    transition: .2s;
+                    height: calc(100vh - 70px);
+                    padding-top: v.$m;
+                    opacity: 1;
+                    gap: calc(2 * v.$m);
+                }
+            }
+
+        }
+
     }
 }

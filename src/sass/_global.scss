@@ -30,6 +30,7 @@ body {
     min-height: 100vh;
     color: var(--p-color);
     background-color: var(--bg-1);
+    overflow-x: hidden;
 }
 h1 {
     color: var(--title-color);
