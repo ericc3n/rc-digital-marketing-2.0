@@ -7,11 +7,14 @@
 .my-regular {
     margin-top: v.$regular;
 }
-.my-l {
+.my-m {
     margin-top: v.$m;
 }
-.my-xl {
+.my-l {
     margin-top: v.$l;
+}
+.my-xl {
+    margin-top: v.$xl;
 }
 .section {
     padding: v.$xxl var(--MX-REGULAR);
@@ -60,6 +63,14 @@ a.btn-2 {
     }
 }
 
-/* Button 3 */
-
-
+// Shadow
+.glow-effect {
+    box-shadow: 0px 0px 250px 9px rgba(0, 118, 191, 0.25);
+}
+span.gradient-text {
+    background: linear-gradient(272.03deg, var(--gradient-color-secondary) 17.79%, var(--gradient-color-primary) 52.43%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}

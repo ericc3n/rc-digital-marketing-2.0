@@ -11,8 +11,8 @@ nav {
     background-color: var(--bg-1);
     z-index: 2;
     .nav-container {
+        width: max(33%, 300px);
         ul.link-pages {
-            width: max(30%, 300px);
             display: flex;
             justify-content: space-between;
             list-style: none;
@@ -28,6 +28,7 @@ nav {
     }
     @include m.respond-to('tablet') {
         .nav-container {
+            width: auto;
             span.drop-menu-button {
                 cursor: pointer;
                 line-height: 0;
@@ -48,12 +49,14 @@ nav {
 
                 // Dynamic class
                 &.hide {
+                    visibility: hidden;
                     transition: .2s ease-out;
                     height: min-content;
                     opacity: 0;
                     gap: v.$m;
                 }
                 &.show {
+                    visibility: visible;
                     transition: .2s;
                     height: calc(100vh - 70px);
                     padding-top: v.$m;

@@ -8,6 +8,10 @@
     --p-m-color-l: 46%;
     --h2-color-l: 21%;
     --title-color-l: 10%;
+    --glow-effect-l: 63%;
+
+    --gradient-color-primary-l: 41%;
+    --gradient-color-secondary-l: 43%;
 }
 .dark {
     // Lightness value for dark-theme
@@ -20,6 +24,10 @@
     --p-m-color-l: 56%;
     --h2-color-l: 79%;
     --title-color-l: 90%;
+
+    --glow-effect-l: 37%;
+    --gradient-color-primary-l: 59%;
+    --gradient-color-secondary-l: 57%;
 }
 :root {
     // Colors
@@ -35,14 +43,18 @@
     --h2-color: hsl(202, 21%, var(--h2-color-l));
     --title-color: hsl(0, 0%, var(--title-color-l));
 
+    --glow-effect: hsla(203, 100%, var(--glow-effect-l), 0.616);
+    --gradient-color-primary: hsl(147, 94%, var(--gradient-color-primary-l));
+    --gradient-color-secondary: hsl(203, 100%, var(--gradient-color-secondary-l));
+
     // Sizes
     --MX-REGULAR: calc(18% - 3rem);
-    --TITLE-SIZE: v.$xl;
+    --TITLE-SIZE: 3rem;
 }
 
 @media screen and (max-width: 535px) {
     :root {
         --MX-REGULAR: 1.25rem;
-        --TITLE-SIZE: calc(v.$xl * (5 / 6));
+        --TITLE-SIZE: 2.5rem;
     }
 }

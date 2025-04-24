@@ -1,0 +1,43 @@
+@use "../../sass/variables" as v;
+@use "../../sass/mixins" as m;
+
+.section.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    &.direction-reverse {
+        flex-direction: row-reverse;
+    }
+    .text-content {
+        max-width: 550px;
+    }
+    .side-content {
+        width: 530px;
+        aspect-ratio: 663 / 634;
+        min-width: 350px;
+        .img {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            border-radius: v.$border-r-regular;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include m.glow-effect();
+        }
+    }
+    @include m.respond-to(1080px) {
+        flex-direction: column;
+        align-items: start;
+        gap: v.$xl;
+        &.direction-reverse {
+            flex-direction: column-reverse;
+        }
+        .side-content {
+            max-width: 400px;
+            min-width: 0px;
+            width: 100%;
+        }
+    }
+}

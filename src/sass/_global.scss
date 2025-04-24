@@ -10,6 +10,13 @@
     font-display: swap; // Add this line
 }
 @font-face {
+    font-family: 'Raleway_Bold';
+    src: url('../fonts/Raleway-Bold.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap; // Add this line
+}
+@font-face {
     font-family: 'Istok_Web';
     src: url('../fonts/IstokWeb-Regular.ttf') format('truetype');
     font-weight: 400;
@@ -34,20 +41,20 @@ body {
 }
 h1 {
     color: var(--title-color);
-    font-size: v.$xl;
-    font-weight: 700;
+    font-family: 'Raleway_Bold', sans-serif;
+    font-size: var(--TITLE-SIZE);
     list-style: 1.24;
 }
 h2 {
+    font-family: 'Raleway_Bold', sans-serif;
     color: var(--h2-color);
     font-size: calc(v.$regular * 2.25);
-    font-weight: 700;
     line-height: 1.12;
 }
 h3 {
+    font-family: 'Raleway_Bold', sans-serif;
     color: var(--title-color);
     font-size: v.$m;
-    font-weight: 700;
     line-height: 1.20;
 }
 p {
