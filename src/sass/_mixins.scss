@@ -22,8 +22,20 @@
         min-width: 80%;
         height: 60%;
         border-radius: 100%;
-        background-color: red;
         z-index: -1;
-        box-shadow: 0px 0px 250px 10px var(--glow-effect);
+        background: #0076BF;
+        filter: blur(115px);
+    }
+}
+@mixin glow-effect-s() {
+    &::after {
+        content: '';
+        position: absolute;
+        margin-top: 72.3px;
+        width: 100%;
+        height: 24px;
+        align-self: center;
+        background: #0076BF;
+        filter: blur(115px);
     }
 }

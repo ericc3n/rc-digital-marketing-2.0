@@ -1,5 +1,6 @@
-.services-section {
-    margin-inline: var(--MX-REGULAR);
+@use 'src/sass/variables' as v;
+
+.section--margin.services {
     position: relative;
     display: grid;
     &::after {
@@ -11,9 +12,5 @@
         align-self: center;
         background: #0076BF;
         filter: blur(115px);
-
-    }
-    h2 {
-        text-align: center;
     }
 }

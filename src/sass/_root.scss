@@ -12,6 +12,8 @@
 
     --gradient-color-primary-l: 41%;
     --gradient-color-secondary-l: 43%;
+
+    --border-color-l: 92%;
 }
 .dark {
     // Lightness value for dark-theme
@@ -28,6 +30,8 @@
     --glow-effect-l: 37%;
     --gradient-color-primary-l: 59%;
     --gradient-color-secondary-l: 57%;
+
+    --border-color-l: 8%;
 }
 :root {
     // Colors
@@ -46,6 +50,8 @@
     --glow-effect: hsla(203, 100%, var(--glow-effect-l), 0.616);
     --gradient-color-primary: hsl(147, 94%, var(--gradient-color-primary-l));
     --gradient-color-secondary: hsl(203, 100%, var(--gradient-color-secondary-l));
+
+    --border-color: hsl(146, 95%, var(--border-color-l));
 
     // Sizes
     --MX-REGULAR: calc(18% - 3rem);

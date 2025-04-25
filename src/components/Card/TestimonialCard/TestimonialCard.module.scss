@@ -1,0 +1,25 @@
+@use 'src/sass/variables' as v;
+
+.card {
+    padding: 1.5rem 1rem;
+    background-color: var(--bg-2);
+    border-radius: v.$border-r-regular;
+    border: 1px solid var(--border-color);
+    .headerCard {
+        display: flex;
+        justify-content: space-between;
+        .userInfo {
+            display: flex;
+            gap: v.$xs;
+            align-items: center;
+            .textContent p {
+                line-height: 1;
+            }
+        }
+        .icon {
+            font-size: 2rem;
+            color: var(--primary);
+            filter: drop-shadow(0px 0px 4px var(--primary));
+        }
+    }
+}

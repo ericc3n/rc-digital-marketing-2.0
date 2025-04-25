@@ -1,0 +1,22 @@
+@use 'src/sass/variables' as v;
+
+ul.check-list {
+    list-style: none;
+    li {
+        margin-bottom: v.$m;
+        display: flex;
+        align-items: flex-start;
+        .icon {
+            flex-shrink: 0;
+            vertical-align: middle;
+            color: var(--primary);
+            margin-top: .2rem;
+        }
+        span.text {
+            color: var(--title-color);
+            flex: 1;
+            margin-left: v.$s;
+            font-weight: 500;
+        }
+    }
+}

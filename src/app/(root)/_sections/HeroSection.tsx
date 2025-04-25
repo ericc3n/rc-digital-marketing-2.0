@@ -1,12 +1,11 @@
-import Hero from '@/ui/Hero/Hero';
+import TwoColumns from '@/ui/TwoColumns/TwoColumns';
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import "@/ui/Hero/Hero.scss";
 
-export default function HeroSection() {
+export default function TwoColumnsSection() {
   return (
-    <Hero>
+    <TwoColumns>
       <div className="text-content">
         <h1>Porta il Tuo <span className="gradient-text">Business</span> al Livello Successivo</h1>
         <p className='my-m'>Credi che sia impossibile? Scopri come abbiamo già aiutato attività simile alla tua a raggiungere questo obiettivo.</p>
@@ -15,8 +14,8 @@ export default function HeroSection() {
           <Link className='btn-2' href='/solutions'>Soluzioni</Link>
         </div>
       </div>
-      <div className="side-content img">
-          <div className="img">
+      <div className="side-content" style={{ width: '530px' }}>
+        <div className="img">
           <Image
               src="/hero-image.png"
               alt="Hero Image"
@@ -26,6 +25,6 @@ export default function HeroSection() {
         </div>
       </div>
 
-    </Hero>
+    </TwoColumns>
   );
 }

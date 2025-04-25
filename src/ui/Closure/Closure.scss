@@ -1,0 +1,12 @@
+@use 'src/sass/mixins' as m;
+
+.section--margin.closure {
+    text-align: center;
+    position: relative;
+    display: grid;
+    @include m.glow-effect-s();
+    a.btn-1 {
+        width: fit-content;
+        margin-inline: auto;
+    }
+}

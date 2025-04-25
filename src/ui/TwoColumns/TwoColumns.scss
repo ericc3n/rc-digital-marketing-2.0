@@ -1,7 +1,7 @@
 @use "../../sass/variables" as v;
 @use "../../sass/mixins" as m;
 
-.section.hero {
+.section.two-columns {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -13,7 +13,6 @@
         max-width: 550px;
     }
     .side-content {
-        width: 530px;
         aspect-ratio: 663 / 634;
         min-width: 350px;
         .img {
@@ -37,7 +36,7 @@
         .side-content {
             max-width: 400px;
             min-width: 0px;
-            width: 100%;
+            width: 100% !important;
         }
     }
 }

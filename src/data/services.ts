@@ -5,14 +5,14 @@ import { RiLayout2Fill } from "react-icons/ri";
 
 interface ServiceType {
   Icon: IconType;
-  title: string;
+  title: "Applicazione" | "Portfolio" | "SMM" | "Gestionale";
   description: string;
 }
 
 export const services: ServiceType[] = [
   {
     Icon: FaRocket,
-    title: "Web app",
+    title: "Applicazione",
     description: "Dai vita ad una realtà di interazione con il tuo cliente automatizzata"
   },
   {

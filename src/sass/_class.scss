@@ -19,6 +19,9 @@
 .section {
     padding: v.$xxl var(--MX-REGULAR);
 }
+.section--margin {
+    margin: v.$xxl var(--MX-REGULAR);
+}
 
 // Buttons
 button.btn-1,

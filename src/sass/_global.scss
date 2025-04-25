@@ -1,28 +1,7 @@
 @forward './class';
 @forward './root';
+@forward './fonts';
 @use './variables' as v;
-
-@font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/Raleway-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap; // Add this line
-}
-@font-face {
-    font-family: 'Raleway_Bold';
-    src: url('../fonts/Raleway-Bold.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap; // Add this line
-}
-@font-face {
-    font-family: 'Istok_Web';
-    src: url('../fonts/IstokWeb-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
 
 * {
     margin: 0;
@@ -41,21 +20,24 @@ body {
 }
 h1 {
     color: var(--title-color);
-    font-family: 'Raleway_Bold', sans-serif;
     font-size: var(--TITLE-SIZE);
+    font-weight: 700;
     list-style: 1.24;
 }
 h2 {
-    font-family: 'Raleway_Bold', sans-serif;
     color: var(--h2-color);
     font-size: calc(v.$regular * 2.25);
+    font-weight: 700;
     line-height: 1.12;
+    &.center {
+        text-align: center;
+    }
 }
 h3 {
-    font-family: 'Raleway_Bold', sans-serif;
     color: var(--title-color);
     font-size: v.$m;
-    line-height: 1.20;
+    font-weight: 700;
+    line-height: 1.5;
 }
 p {
     line-height: 1.65;
@@ -63,9 +45,21 @@ p {
         color: var(--p-m-color);
         font-weight: 500;
     }
-    &.semi-bold {
+    &.semibold {
         color: var(--title-color);
         font-weight: 600;
+    }
+    &.small {
+        font-size: v.$s;
+        font-weight: 300;
+    }
+}
+a {
+    text-decoration: none;
+    color: var(--p-color);
+    cursor: pointer;
+    &.simple-link:hover {
+        text-decoration: underline;
     }
 }
   
