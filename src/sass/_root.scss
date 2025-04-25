@@ -34,8 +34,8 @@
     --primary: hsl(147, 95%, var(--primary-l));
     --secondary: hsl(203, 100%, var(--secondary-l));
     --bg-1: hsl(205, 40%, var(--bg1-l));
-    --bg-2: hsl(204, 49%, var(--bg2-l));
-    --bg-3: hsla(204, 49%, var(--bg2-l), 0.2);
+    --bg-2: hsla(204, 49%, var(--bg2-l), .2);
+    --bg-3: hsla(204, 49%, var(--bg2-l), 0.5);
     --bg-4: hsla(204, 49%, var(--bg2-l), 0.8);
     --main-color: hsl(0, 0%, var(--main-color-l));
     --p-color: hsl(0, 0%, var(--p-color-l));

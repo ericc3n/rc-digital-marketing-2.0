@@ -1,0 +1,13 @@
+@use 'src/sass/variables' as v;
+@use 'src/sass/mixins' as m;
+
+.gridLayout {
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    gap: 1.5rem;
+
+
+    @include m.respond-to('tablet') {
+        grid-template-columns: 1fr;
+    }
+}

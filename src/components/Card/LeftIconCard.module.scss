@@ -1,0 +1,25 @@
+@use 'src/sass/variables' as v;
+@use 'src/sass/mixins' as m;
+
+.card {
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    border-radius: v.$border-r-regular;
+    border: 1px solid #012812;
+    background-color: var(--bg-2);
+}
+
+.icon {
+    font-size: 48px;
+    padding: 2rem;
+    border-radius: v.$border-r-s;
+    background-color: var(--bg-3);
+    color: var(--primary);
+    line-height: 0;
+}
+
+.textContent {
+    max-width: 340px;
+}

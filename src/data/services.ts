@@ -30,4 +30,6 @@ export const services: ServiceType[] = [
     title: "Gestionale",
     description: "Gestisci tutti i dati della tua azienda direttamente dal tuo PC"
   },
-]
+];
+
+export type { ServiceType };
