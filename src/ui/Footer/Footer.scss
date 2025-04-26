@@ -30,9 +30,8 @@ footer {
             }
         }
         ul.column {
-            flex-grow: 1;
             list-style: none;
-            max-width: 250px;
+            min-width: 254px;
             .title {
                 font-weight: 200;
                 margin-bottom: v.$regular;
