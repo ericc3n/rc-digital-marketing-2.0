@@ -12,14 +12,14 @@ export const testimonials: TestimonialType[] = [
     imgSrc: `${ROUTE_PREFIX}/studiocolore.png`,
     name: "Studio Colore",
     domain: "studiocolore.it",
-    quote: "Grazie al loro supporto abbiamo aumentato la nostra visibilità online in poche settimane.",
+    quote: "Lavorare con loro è stato semplice e piacevole grazie alla loro professionalità e attenzione alle mie richieste. Hanno realizzato un sito web accattivante e facile da utilizzare.",
     serviceType: "Portfolio"
   },
   {
     imgSrc: `${ROUTE_PREFIX}/houselabmilan.png`,
     name: "House Lab Milan",
     domain: "houselabmilan.com",
-    quote: "Strategie efficaci e risultati concreti: un team davvero competente.",
+    quote: "Società snella e fresca, tante idee a contenuti; hanno cercato di accontentare ed assecondare ogni richiesta, creando un sito funzionale e con possibilità di espansione e scalabilità.",
     serviceType: "Applicazione"
   }
 ];
