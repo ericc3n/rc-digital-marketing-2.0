@@ -17,7 +17,8 @@ const MenuIcon = ({ menuOpen } : { menuOpen: boolean}): React.JSX.Element => {
 
 export default function Navbar() {
   const [isTablet, setIsTablet] = useState<boolean>(false); 
-  const [isMenuOpened, setIsMenuOpened] = useState<boolean>(false); 
+  const [isMenuOpened, setIsMenuOpened] = useState<boolean>(false);
+  const closeMenu = () => setIsMenuOpened(false);
 
   // Resize navbar
   useResize(TABLET_SCREEN, setIsTablet);
@@ -51,9 +52,9 @@ export default function Navbar() {
           </span>
         )}
         <ul className={`link-pages ${isMenuOpened ? 'show' : 'hide'}`}>
-          <li><Link href='/'>Home</Link></li>
-          <li><Link href='/solutions'>Soluzioni</Link></li>
-          <li><Link href='/contacts'>Contatti</Link></li>
+          <li><Link href='/' onClick={closeMenu}>Home</Link></li>
+          <li><Link href='/solutions' onClick={closeMenu}>Soluzioni</Link></li>
+          <li><Link href='/contacts' onClick={closeMenu}>Contatti</Link></li>
           {isTablet && (
             <li><ThemeSwitcher /></li>
           )}
