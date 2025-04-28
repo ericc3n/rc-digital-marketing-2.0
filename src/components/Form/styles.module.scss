@@ -1,0 +1,12 @@
+@use "src/sass/variables" as v;
+@use "src/sass/mixins" as m;
+
+.emailForm {
+    border: 2px solid var(--border-color);
+    border-radius: v.$border-r-regular;
+    padding: 1.5em 1em;
+    max-width: 570px;
+    background-color: var(--bg-1);
+    // background-color: hsl(204, 49%, var(--bg2-l));
+    
+}

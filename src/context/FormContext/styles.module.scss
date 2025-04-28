@@ -1,0 +1,14 @@
+@use "../../sass/variables" as v;
+
+.postMessage {
+    margin-block: v.$xs;
+    min-height: 26.6px;
+}
+.errorMessage {
+    color: red;
+    font-weight: 300;
+}
+.successMessage {
+    color: green;
+    font-weight: 300;
+}

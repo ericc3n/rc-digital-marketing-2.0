@@ -26,7 +26,7 @@ export default function TestimonialCard({ testimonial }: { testimonial: Testimon
         </div>
         <FaQuoteLeft className={styles.icon} />
       </div>
-      <p className='my-m'>{testimonial.quote}</p>
+      <p className='my-m normal'>{testimonial.quote}</p>
     </div>
   )
 }

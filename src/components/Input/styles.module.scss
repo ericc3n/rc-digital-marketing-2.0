@@ -1,0 +1,62 @@
+@use "src/sass/variables" as v;
+@use "src/sass/mixins" as m;
+
+.inputBox {
+    margin-top: v.$m;
+    width: 100%;
+    position: relative;
+    label {
+        transition: .1s;
+        left: .75em;
+        top: .85em;
+        font-family: Arial, monospace;
+        position: absolute;
+        width: min-content;
+        cursor: text;
+        &.notEmpty {
+            top: -.5rem;
+            left: 0;
+            background-color: var(--bg-1);
+            padding-inline: .25em;
+            margin-inline: .25em;
+            transform: scale(90%);
+        }
+    }
+    input,
+    textarea {
+        transition: .1s;
+        width: 100%;
+        font-family: Arial, monospace;
+        background-color: var(--bg-1);
+        width: 100%;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        padding: .75em;
+        border-radius: v.$border-r-s;
+        border: 1px solid rgba(#888888, .2);
+        outline: 1px solid transparent;
+        color: var(--title-color);
+        &:focus {
+            transition: .1s ease-in;
+            border-color: var(--secondary);
+            outline-color: var(--secondary);
+            & + label {
+                top: -.5rem;
+                left: 0;
+                background-color: var(--bg-1);
+                padding-inline: .25em;
+                margin-inline: .25em;
+                transform: scale(90%);
+            }
+        }
+        // Dynamic class
+        &.error {
+            border-color: #cc0000;
+            outline-color: #cc0000;
+        }
+    }
+    textarea {
+        height: 10rem;
+        resize: none;
+    }
+}
