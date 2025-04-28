@@ -16,8 +16,8 @@ export default function Footer() {
         <div className="logo-socials">
           <Logo noColor />
           <div className="socials">
-            <a href="" target="_blank" className="icon"><FaInstagram /></a>
-            <a href="https://www.instagram.com/rc.digital_marketing/" target="_blank" className="icon"><FaFacebook /></a>
+            <a href="https://www.instagram.com/rc.digital_marketing/" target="_blank" className="icon"><FaInstagram /></a>
+            <a href="" target="_blank" className="icon"><FaFacebook /></a>
           </div>
         </div>
         <ul className="column">
