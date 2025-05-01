@@ -5,7 +5,7 @@ import { IoSparkles } from "react-icons/io5";
 interface ServiceType {
   Icon: IconType;
   title: string;
-  description: string
+  description?: string
 };
 
 export const services: ServiceType[] = [
