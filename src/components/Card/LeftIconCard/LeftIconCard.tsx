@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './LeftIconCard.module.scss';
-import { ServiceType } from '@/data/services';
+import { ServiceType } from '@/data/solutions';
 
 export default function LeftIconCard({ Icon, title, description }: ServiceType ) {
   return (

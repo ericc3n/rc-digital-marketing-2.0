@@ -1,6 +1,6 @@
 import GridFour from '@/ui/GridFour/GridFour';
 import React from 'react';
-import { services } from '@/data/services';
+import { services } from '@/data/solutions';
 import LeftIconCard from '@/components/Card/LeftIconCard/LeftIconCard';
 import "./ServicesSection.scss";
 

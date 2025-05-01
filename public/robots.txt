@@ -1,3 +1,3 @@
 User-agent: *
-Sitemap: https://rc-digital-marketing.vercel.app/sitemap
+Sitemap: https://rc-digital-marketing.vercel.app/sitemap.xml
 Disallow: 

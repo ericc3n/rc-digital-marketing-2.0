@@ -1,0 +1,19 @@
+@use 'src/sass/variables' as v;
+
+.card {
+    display: flex;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    background-color: var(--bg-2);
+    border: 1px solid var(--border-color);
+    justify-content: center;
+    border-radius: v.$border-r-regular;
+}
+.icon {
+    color: var(--primary);
+    font-size: v.$xl;
+    margin-top: 4px;
+}
+.textContent {
+    max-width: 350px;
+}

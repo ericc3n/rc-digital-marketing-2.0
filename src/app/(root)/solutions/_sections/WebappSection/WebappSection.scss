@@ -1,0 +1,10 @@
+@use 'src/sass/mixins' as m;
+
+.section--margin.web-app {
+    // .text-content {
+    //     max-width: 520px;
+    // }
+    position: relative;
+    @include m.glow-effect-s();
+
+}

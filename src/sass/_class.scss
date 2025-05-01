@@ -20,7 +20,8 @@
     padding: v.$xxl var(--MX-REGULAR);
 }
 .section--margin {
-    margin: v.$xxl var(--MX-REGULAR);
+    margin-inline: var(--MX-REGULAR);
+    padding-block: v.$xxl;
 }
 
 // Buttons
