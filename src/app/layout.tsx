@@ -24,6 +24,9 @@ export const metadata: Metadata = {
     type: "website"
   },
   robots: "index, follow",
+  verification: {
+    google: "rlvWQVE08yHKhqr3S0jFJ2N0R2lmZ-kELKV5A7kiTpM",
+  }
 };
 
 export default function Layout({
