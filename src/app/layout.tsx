@@ -7,7 +7,23 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 export const metadata: Metadata = {
   title: "RC Digital Marketing",
   description: "Porta il Tuo Business al Livello Successivo",
-  icons: '/favicon.png'
+  icons: '/favicon-2.png',
+  openGraph : {
+    title: "RC Digital Marketing",
+    description: "Porta il tuo Business al Livello Successivo",
+    url: "https://rc-digital-marketing.vercel.app/",
+    siteName: "RC Digital Marketing",
+    images: [
+      {
+        url: "/favicon-2.png",
+        width: 1200,
+        height: 630,
+        alt: 'RC Digital Marketing',
+      },
+    ],
+    type: "website"
+  },
+  robots: "index, follow",
 };
 
 export default function Layout({
@@ -16,7 +32,7 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="it" suppressHydrationWarning>
       <body>
         <ThemeProvider 
           attribute="class"
