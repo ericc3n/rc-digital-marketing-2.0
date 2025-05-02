@@ -14,7 +14,7 @@ export default function page() {
       <PortfolioSection />
       <GestionaleSection />
       <SMMSection />
-      <Closure>
+      <Closure cta='Inizia il tuo percorso'>
         <h1>Sei pronto a <span className="gradient-text">salire di livello</span>?</h1>
         <p className='my-m'>Inizia ora a far crescere il tuo business con noi</p>
       </Closure>
