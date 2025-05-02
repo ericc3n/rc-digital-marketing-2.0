@@ -38,6 +38,9 @@ h3 {
     font-size: v.$m;
     font-weight: 700;
     line-height: 1.5;
+    &.small {
+        font-size: 1.25rem;
+    }
 }
 p {
     line-height: 1.65;
@@ -62,4 +65,3 @@ a {
         text-decoration: underline;
     }
 }
-  

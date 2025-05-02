@@ -7,7 +7,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 export const metadata: Metadata = {
   title: "RC Digital Marketing",
   description: "Porta il Tuo Business al Livello Successivo",
-  icons: '/favicon-2.png',
+  icons: '/favicon.png',
   openGraph : {
     title: "RC Digital Marketing",
     description: "Porta il tuo Business al Livello Successivo",

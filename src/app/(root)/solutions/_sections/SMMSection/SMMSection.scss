@@ -1,0 +1,10 @@
+@use 'src/sass/mixins' as m;
+@use 'src/sass/variables' as v;
+
+.section.smm {
+    display: flex;
+    gap: 2rem;    
+    @include m.respond-to('tablet') {
+        flex-direction: column-reverse;
+    }
+}

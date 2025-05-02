@@ -51,6 +51,7 @@
     }
     .side-content {
         flex: 1;
+        min-width: 500px;
         position: relative;
         display: flex;
         align-items: center;
@@ -61,5 +62,8 @@
 
     @include m.respond-to('tablet') {
         flex-direction: column;
+        .side-content {
+            min-width: 0;
+        }
     }
 }

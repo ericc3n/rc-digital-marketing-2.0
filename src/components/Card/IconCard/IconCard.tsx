@@ -1,15 +1,15 @@
 import React from 'react';
-import styles from './ServiceCard.module.scss';
+import styles from './IconCard.module.scss';
 import { ServiceType } from '@/data/services/webApp';
 
-export default function ServiceCard({ service }: { service: ServiceType }) {
+export default function IconCard({ service }: { service: ServiceType }) {
   return (
     <div className={styles.card}>
       <div className={styles.icon}>
         <service.Icon />
       </div>
-      <div className={styles.textContent}>
-        <h3 className='small'>{service.title}</h3>
+      <div className={styles.content}>
+        <h3 className='my-regular small'>{service.title}</h3> 
         <p className='my-xs'>{service.description}</p>
       </div>
     </div>

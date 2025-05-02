@@ -1,0 +1,22 @@
+@use 'src/sass/mixins' as m;
+@use 'src/sass/variables' as v;
+
+.portfolio {
+    text-align: center;
+    .cards {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        @include m.glow-effect-s();
+        gap: 1.5rem;
+        > * {
+            max-width: 350px;
+        }
+    }
+    @include m.respond-to('tablet') {
+        .cards {
+            flex-wrap: wrap;
+        }
+    }
+}

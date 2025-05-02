@@ -13,6 +13,7 @@
         position: absolute;
         width: min-content;
         cursor: text;
+        border-radius: 4px;
         &.notEmpty {
             top: -.5rem;
             left: 0;
@@ -36,6 +37,10 @@
         border: 1px solid rgba(#888888, .2);
         outline: 1px solid transparent;
         color: var(--title-color);
+        &:-webkit-autofill {
+            box-shadow: 0 0 0 1000px var(--bg-1) inset; 
+            -webkit-text-fill-color: var(--title-color);        
+        }
         &:focus {
             transition: .1s ease-in;
             border-color: var(--secondary);

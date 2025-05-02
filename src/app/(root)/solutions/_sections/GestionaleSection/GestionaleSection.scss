@@ -1,0 +1,38 @@
+@use 'src/sass/variables' as v;
+@use 'src/sass/mixins' as m;
+
+.section.gestionale {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    .text-content {
+        max-width: 550px;
+    }
+    .cards {
+        flex: 1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-content: center;
+        gap: 1rem;
+        position: relative;
+        @include m.glow-effect-s();
+        .card {
+            padding: .75rem;    
+            min-width: 240px;
+            background-color: var(--bg-2);
+            border: 1px solid var(--border-color);
+            text-align: center;
+            border-radius: v.$border-r-regular;
+            .icon {
+                color: var(--primary);
+                font-size: 3rem;
+            }
+        }
+    }
+    @include m.respond-to('tablet') {
+        flex-direction: column;
+        .cards .card {
+            min-width: 0;
+        }
+    }
+}

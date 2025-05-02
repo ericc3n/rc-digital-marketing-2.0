@@ -4,8 +4,8 @@ import React from 'react';
 export default function ClosureSection() {
   return (
     <Closure>
-      <h1>Sei pronto a <span className="gradient-text">salire di livello</span>?</h1>
-      <p className='my-m'>Inizia ora a far crescere il tuo business con noi</p>
+      <h1>Stai valutando <span className="gradient-text">nuove strade</span> per crescere?</h1>
+      <p className='my-m'>Parla oggi stesso con un nostro consulente, <b>gratis</b> e senza impegno.</p>
     </Closure>
   )
 }
