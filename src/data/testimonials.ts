@@ -11,7 +11,7 @@ export const testimonials: TestimonialType[] = [
   {
     imgSrc: `${ROUTE_PREFIX}/studiocolore.png`,
     name: "Studio Colore",
-    domain: "studiocolore.it",
+    domain: "studio-colore-test.vercel.app",
     quote: "Lavorare con loro è stato semplice e piacevole grazie alla loro professionalità e attenzione alle mie richieste. Hanno realizzato un sito web accattivante e facile da utilizzare.",
     serviceType: "Portfolio"
   },
