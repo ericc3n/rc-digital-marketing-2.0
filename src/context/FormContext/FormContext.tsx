@@ -6,6 +6,12 @@ import { MdErrorOutline } from "react-icons/md";
 import { IoCheckmarkOutline } from "react-icons/io5";
 import styles from "./styles.module.scss";
 
+interface ApiResponse {
+  message?: string;
+  error?: string;
+}
+
+
 // Context impementation
 const FormContext = createContext<FormContextValue | undefined>(undefined);
 const useFormContext = () :FormContextValue => {
@@ -77,45 +83,35 @@ const FormProvider: React.FC<{
   
     try {
       verificateForm(formData, dispatch);
-      
+    
       const response = await fetch(route, {
         method: "POST",
-        headers: { "Content-Type": "application/json"},
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
         signal
-      })
+      });
+    
+      const data: ApiResponse = await response.json();
       if (!response.ok) {
-        const text = await response.text();
-        if (!text) {
-          throw new Error("Risposta vuota dal server");
-        }
-        let errorData;
-        try {
-          errorData = JSON.parse(text);
-        } catch {
-          throw new Error("Risposta non valida dal server");
-        }
-        throw errorData;
+        throw new Error(data.error || "Errore sconosciuto dal server");
       }
-      
-
-      setSuccessMsg("Email inviata con successo!");
+      setSuccessMsg(data.message || "Email inviata con successo!");
       dispatch({ type: "RESET", initialState });
-
-    } catch (error: unknown) {
+    
+    } catch (error) {
       if (error instanceof Error) {
         if (error.name === "AbortError") {
           console.log("Richiesta annullata");
         } else {
-          setErrorMsg(error?.message || "Errore nella richiesta");
+          setErrorMsg(error.message);
         }
+      } else {
+        setErrorMsg("Errore sconosciuto");
       }
     }
-
     finally {
       setIsLoading(false);
     }
-
     return () => controller.abort();
   }
 
