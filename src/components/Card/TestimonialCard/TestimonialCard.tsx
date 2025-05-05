@@ -20,7 +20,7 @@ export default function TestimonialCard({ testimonial }: { testimonial: Testimon
           <div className={styles.textContent}>
             <p className="semibold">{testimonial.name}</p>
             <p className="small" style={{ marginTop: '4px' }}>
-              <Link target='_blank' href={`https://www.${testimonial.domain}`} className='simple-link'>{testimonial.domain}</Link>
+              <Link target='_blank' href={`https://${testimonial.domain}`} className='simple-link'>{testimonial.domain}</Link>
             </p>
           </div>
         </div>
