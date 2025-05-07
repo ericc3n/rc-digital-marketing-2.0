@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     siteName: "RC Digital Marketing",
     images: [
       {
-        url: "/favicon-2.png",
+        url: "/open-graph.jpg",
         width: 1200,
         height: 630,
         alt: 'RC Digital Marketing',
