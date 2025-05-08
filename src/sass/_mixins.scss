@@ -16,11 +16,15 @@
 }
 
 @mixin glow-effect() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &::after {
         content: '';
         position: absolute;
-        min-width: 80%;
-        height: 60%;
+        min-width: 180px;
+        width: 20%;
+        aspect-ratio: 1 / 1;
         border-radius: 100%;
         z-index: -1;
         background: #0076BF;
@@ -37,5 +41,6 @@
         align-self: center;
         background: #0076BF;
         filter: blur(115px);
+        
     }
 }

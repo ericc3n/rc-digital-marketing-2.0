@@ -1,7 +1,6 @@
 import TwoColumns from '@/ui/TwoColumns/TwoColumns';
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { FadeIn } from '@/components/Animation/FadeIn';
 
 export default function TwoColumnsSection() {
@@ -19,14 +18,10 @@ export default function TwoColumnsSection() {
       </FadeIn>
       <FadeIn direction='pop'>
         <div className="side-content" style={{ width: '530px' }}>
-          <div className="img">
-            <Image
-                src="/hero-image.png"
-                alt="Hero Image"
-                fill
-                style={{ objectFit: 'cover' }}
-              />
-          </div>
+          <img
+              src="/hero-image.png"
+              alt="Hero Image"
+            />
         </div>
       </FadeIn>
 

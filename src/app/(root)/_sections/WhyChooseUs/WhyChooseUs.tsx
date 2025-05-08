@@ -1,7 +1,6 @@
 import React from 'react';
 import TwoColumns from '@/ui/TwoColumns/TwoColumns';
 import { FaCheckCircle } from 'react-icons/fa';
-import Image from 'next/image';
 import './WhyChooseUs.scss';
 import { FadeIn } from '@/components/Animation/FadeIn';
 
@@ -35,15 +34,11 @@ export default function WhyChooseUs() {
         </ul>
       </div>
       <FadeIn direction='pop'>
-        <div className="side-content" style={{ width: '480px' }}>
-          <div className="img">
-            <Image
-                src="/choose-us.png"
-                alt="Why choose us"
-                fill
-                style={{ objectFit: 'cover' }}
-              />
-          </div>
+        <div className="side-content">
+          <img
+              src="/choose-us.png"
+              alt="Why choose us"
+            />
         </div>
       </FadeIn>
     </TwoColumns>
