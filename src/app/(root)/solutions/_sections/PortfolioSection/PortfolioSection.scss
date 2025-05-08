@@ -3,6 +3,13 @@
 
 .portfolio {
     text-align: center;
+    .text-content {
+        display: grid;
+        place-content: center;
+        p {
+            max-width: 800px;
+        }
+    }
     .cards {
         margin-top: 2rem;
         display: flex;

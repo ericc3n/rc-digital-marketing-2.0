@@ -4,6 +4,10 @@
     text-align: center;
     position: relative;
     display: grid;
+    place-content: center;
+    h1 {
+        max-width: 700px;
+    }
     @include m.glow-effect-s();
     a.btn-1 {
         width: fit-content;
