@@ -11,6 +11,12 @@
 
     background: linear-gradient(95.15deg, #004D7D 0%, #008039 100%);
     border-radius: 16px;
+    h1 {
+        color: #E5E5E5;
+    }
+    p {
+        color: #999999;
+    }
 
     @include m.glow-effect-s();
 }
