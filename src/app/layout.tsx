@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph : {
     title: "RC Digital Marketing",
     description: "Porta il tuo Business al Livello Successivo",
-    url: "https://rc-digital-marketing.vercel.app/",
+    url: "https://www.rcdigitalmarketing.it/",
     siteName: "RC Digital Marketing",
     images: [
       {
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   robots: "index, follow",
   verification: {
-    google: "rlvWQVE08yHKhqr3S0jFJ2N0R2lmZ-kELKV5A7kiTpM",
+    google: "tKVwGDE-kic32BET_0U2ZcP4oR6TQkpN_wYGlssbYs0",
   }
 };
 
