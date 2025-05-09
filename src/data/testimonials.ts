@@ -21,7 +21,7 @@ export const testimonials: TestimonialType[] = [
     imgSrc: `${ROUTE_PREFIX}/houselabmilan.png`,
     name: "House Lab Milan",
     domain: "houselabmilan.com",
-    quote: "Società snella e fresca, tante idee a contenuti; hanno cercato di accontentare ed assecondare ogni richiesta, creando un sito funzionale e con possibilità di espansione e scalabilità.",
+    quote: "Società snella e fresca, tante idee e contenuti; hanno cercato di accontentare ed assecondare ogni richiesta, creando un sito funzionale e con possibilità di espansione e scalabilità.",
     serviceType: "Applicazione",
     date: '2025-04-24'
   }
