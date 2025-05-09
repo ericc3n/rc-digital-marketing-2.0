@@ -1,19 +1,20 @@
 @use './variables' as v;
 
 @mixin respond-to($breakpoint) {
-    @if $breakpoint == 'mobile' {
-        @media (max-width: 521px) { @content; }
-    }
-    @if $breakpoint == 'tablet' {
-        @media (max-width: 1080px) { @content; }
-    } 
-    @if $breakpoint == 'desktop' {
-        @media (max-width: 1130px) { @content; }
-    }
-    @else {
-        @media (max-width: $breakpoint) { @content; }
-    }
+  @if $breakpoint == 'mobile' {
+    @media (max-width: 521px) { @content; }
+  } 
+  @else if $breakpoint == 'tablet' {
+    @media (max-width: 1080px) { @content; }
+  } 
+  @else if $breakpoint == 'desktop' {
+    @media (max-width: 1130px) { @content; }
+  } 
+  @else {
+    @media (max-width: $breakpoint) { @content; }
+  }
 }
+
 
 @mixin glow-effect() {
     display: flex;
@@ -41,6 +42,10 @@
         align-self: center;
         background: #0076BF;
         filter: blur(115px);
-        
+    }
+    @include respond-to('tablet') {
+        &::after {
+            display: none;
+        }
     }
 }

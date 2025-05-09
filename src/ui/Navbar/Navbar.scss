@@ -50,14 +50,14 @@ nav {
                 // Dynamic class
                 &.hide {
                     visibility: hidden;
-                    transition: .2s ease-out;
+                    transition: .3s ease-out;
                     height: min-content;
                     opacity: 0;
                     gap: v.$m;
                 }
                 &.show {
                     visibility: visible;
-                    transition: .2s;
+                    transition: .4s;
                     height: calc(100vh - 70px);
                     padding-top: v.$m;
                     opacity: 1;
