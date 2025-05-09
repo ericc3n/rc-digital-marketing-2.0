@@ -4,6 +4,6 @@ interface ContactsType {
 }
 
 export const contacts: ContactsType = {
-  email: "rc0000webdesign@gmail.com",
+  email: "info@rcdigitalmarketing.it",
   tel: "+39 327 951 4494"
 }
