@@ -50,6 +50,33 @@ export default function Layout({
             gtag('config', 'G-PQ60GR5023');
           `}
         </Script>
+        <Script
+          id="organization-schema"
+          type="application/ld+json"
+          strategy="afterInteractive"
+        >
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "RC Digital Marketing",
+              "url": "https://www.rcdigitalmarketing.it",
+              "logo": "https://www.rcdigitalmarketing.it/favicon.png",
+              "description": "RC Digital Marketing offre soluzioni digitali personalizzate per far crescere il tuo business online.",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+39 327 951 4494",
+                "contactType": "customer support",
+                "areaServed": "IT",
+                "availableLanguage": ["Italian", "English"]
+              },
+              "sameAs": [
+                "https://www.facebook.com/profile.php?id=61575681496577",
+                "https://www.instagram.com/rc.digital_marketing/"
+              ]
+            }
+          `}
+        </Script>
       </head>
       <body>
         <ThemeProvider 
