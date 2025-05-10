@@ -3,6 +3,7 @@ import '@/sass/_global.scss';
 import ThemeProvider from "@/context/ThemeProvider/ThemeProvider";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "RC Digital Marketing",
@@ -36,6 +37,20 @@ export default function Layout({
 }>) {
   return (
     <html lang="it" suppressHydrationWarning>
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-PQ60GR5023"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-PQ60GR5023');
+          `}
+        </Script>
+      </head>
       <body>
         <ThemeProvider 
           attribute="class"
