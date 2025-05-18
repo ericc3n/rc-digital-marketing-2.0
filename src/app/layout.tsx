@@ -8,7 +8,16 @@ import Script from "next/script";
 export const metadata: Metadata = {
   title: "RC Digital Marketing",
   description: "Porta il Tuo Business al Livello Successivo",
+  keywords: [
+    "marketing digitale",
+    "pubblicità online",
+    "SEO",
+    "social media",
+    "campagne Google Ads",
+    "RC Digital Marketing"
+  ],
   icons: '/favicon.png',
+  authors: [{ name: "RC Digital Marketing", url: "https://www.rcdigitalmarketing.it" }],
   openGraph : {
     title: "RC Digital Marketing",
     description: "Porta il tuo Business al Livello Successivo",
@@ -24,10 +33,21 @@ export const metadata: Metadata = {
     ],
     type: "website"
   },
-  robots: "index, follow",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
   verification: {
     google: "tKVwGDE-kic32BET_0U2ZcP4oR6TQkpN_wYGlssbYs0",
-  }
+  },
+  metadataBase: new URL("https://www.rcdigitalmarketing.it"),
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function Layout({
