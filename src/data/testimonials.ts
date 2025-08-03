@@ -10,6 +10,14 @@ interface TestimonialType {
 const ROUTE_PREFIX = '/testimonials-images';
 export const testimonials: TestimonialType[] = [
   {
+    imgSrc: `${ROUTE_PREFIX}/trattoriasanbernardo.jpg`,
+    name: "Trattoria San Bernardo",
+    domain: "trattoriasanbernardo.it",
+    quote: "Collaborazoione con Studiocolore. Team giovane e affidabile, sempre attento alle esigenze; hanno proposto soluzioni creative e su misura, realizzando un sito moderno, distintivo e pronto a crescere nel tempo.",
+    serviceType: "Applicazione",
+    date: '2025-07-31'
+  },
+  {
     imgSrc: `${ROUTE_PREFIX}/studiocolore.png`,
     name: "Studio Colore",
     domain: "studio-colore-test.vercel.app",
@@ -24,7 +32,7 @@ export const testimonials: TestimonialType[] = [
     quote: "Società snella e fresca, tante idee e contenuti; hanno cercato di accontentare ed assecondare ogni richiesta, creando un sito funzionale e con possibilità di espansione e scalabilità.",
     serviceType: "Applicazione",
     date: '2025-04-24'
-  }
+  },
 ];
 
 export type { TestimonialType };
